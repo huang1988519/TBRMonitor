@@ -33,6 +33,7 @@
 		D9D56F0F1CC09B0D003CE68D /* TBRURLCollectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EED1CC0991A003CE68D /* TBRURLCollectionManager.m */; };
 		D9D56F101CC09B0D003CE68D /* TBRURLGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EEF1CC0991A003CE68D /* TBRURLGuard.m */; };
 		D9D56F111CC09B0D003CE68D /* TBRURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EF11CC0991A003CE68D /* TBRURLProtocol.m */; };
+		D9D56F3B1CC0A2AA003CE68D /* TBRMonitorFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D9D56F021CC09AC7003CE68D /* TBRMonitorFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +78,7 @@
 		D9D56EEF1CC0991A003CE68D /* TBRURLGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRURLGuard.m; sourceTree = "<group>"; };
 		D9D56EF01CC0991A003CE68D /* TBRURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRURLProtocol.h; sourceTree = "<group>"; };
 		D9D56EF11CC0991A003CE68D /* TBRURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRURLProtocol.m; sourceTree = "<group>"; };
-		D9D56F001CC09AC7003CE68D /* TBRMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TBRMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D56F001CC09AC7003CE68D /* TBRMonitorFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TBRMonitorFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D56F021CC09AC7003CE68D /* TBRMonitorFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBRMonitorFramework.h; sourceTree = "<group>"; };
 		D9D56F041CC09AC7003CE68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,7 +124,7 @@
 			children = (
 				D9D56EB31CC098EC003CE68D /* TBRMonitorExample.app */,
 				D9D56ECC1CC098EC003CE68D /* TBRMonitorExampleTests.xctest */,
-				D9D56F001CC09AC7003CE68D /* TBRMonitor.framework */,
+				D9D56F001CC09AC7003CE68D /* TBRMonitorFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9D56F081CC09AF6003CE68D /* TBRMonitor.h in Headers */,
+				D9D56F3B1CC0A2AA003CE68D /* TBRMonitorFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +293,7 @@
 			);
 			name = TBRMonitorFramework;
 			productName = TBRMonitorFramework;
-			productReference = D9D56F001CC09AC7003CE68D /* TBRMonitor.framework */;
+			productReference = D9D56F001CC09AC7003CE68D /* TBRMonitorFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -570,7 +572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -580,7 +582,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "Alibaba-inc.TBRMonitorFramework";
-				PRODUCT_NAME = TBRMonitor;
+				PRODUCT_NAME = TBRMonitorFramework;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -591,7 +593,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -601,7 +603,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "Alibaba-inc.TBRMonitorFramework";
-				PRODUCT_NAME = TBRMonitor;
+				PRODUCT_NAME = TBRMonitorFramework;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
