@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TBRMonitorFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>D9D56ECB1CC098EC003CE68D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D9D56EFF1CC09AC7003CE68D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -88,7 +88,6 @@ static NSString * TBRURLRecieveLenghtKey = @"TBRURLRecieveLenghtKey";
     }
 }
 - (void)observerErrorUrlChange:(TBRURLChangeHandle)errorUrlChangeBlock {
-    NSInteger count = _errorUrlList.count;
     _errorUrlChangeBlock = errorUrlChangeBlock;
 }
 @end

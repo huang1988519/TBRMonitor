@@ -23,6 +23,16 @@
 		D9D56EF81CC0991A003CE68D /* TBRURLCollectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EED1CC0991A003CE68D /* TBRURLCollectionManager.m */; };
 		D9D56EF91CC0991A003CE68D /* TBRURLGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EEF1CC0991A003CE68D /* TBRURLGuard.m */; };
 		D9D56EFA1CC0991A003CE68D /* TBRURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EF11CC0991A003CE68D /* TBRURLProtocol.m */; };
+		D9D56F081CC09AF6003CE68D /* TBRMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = D9D56EE91CC0991A003CE68D /* TBRMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9D56F091CC09B0C003CE68D /* TBR_NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EDE1CC0991A003CE68D /* TBR_NSObject+Property.m */; };
+		D9D56F0A1CC09B0C003CE68D /* TBR_NSString+md5.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EE01CC0991A003CE68D /* TBR_NSString+md5.m */; };
+		D9D56F0B1CC09B0C003CE68D /* TBRElectricity.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EE31CC0991A003CE68D /* TBRElectricity.m */; };
+		D9D56F0C1CC09B0C003CE68D /* TBREnvConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EE51CC0991A003CE68D /* TBREnvConfig.m */; };
+		D9D56F0D1CC09B0D003CE68D /* TBRDeviceUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EE81CC0991A003CE68D /* TBRDeviceUsage.m */; };
+		D9D56F0E1CC09B0D003CE68D /* TBRMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EEA1CC0991A003CE68D /* TBRMonitor.m */; };
+		D9D56F0F1CC09B0D003CE68D /* TBRURLCollectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EED1CC0991A003CE68D /* TBRURLCollectionManager.m */; };
+		D9D56F101CC09B0D003CE68D /* TBRURLGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EEF1CC0991A003CE68D /* TBRURLGuard.m */; };
+		D9D56F111CC09B0D003CE68D /* TBRURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EF11CC0991A003CE68D /* TBRURLProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +77,9 @@
 		D9D56EEF1CC0991A003CE68D /* TBRURLGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRURLGuard.m; sourceTree = "<group>"; };
 		D9D56EF01CC0991A003CE68D /* TBRURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRURLProtocol.h; sourceTree = "<group>"; };
 		D9D56EF11CC0991A003CE68D /* TBRURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRURLProtocol.m; sourceTree = "<group>"; };
+		D9D56F001CC09AC7003CE68D /* TBRMonitorFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TBRMonitorFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D56F021CC09AC7003CE68D /* TBRMonitorFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBRMonitorFramework.h; sourceTree = "<group>"; };
+		D9D56F041CC09AC7003CE68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9D56EFC1CC09AC7003CE68D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,6 +113,7 @@
 				D9D56EDB1CC0991A003CE68D /* TBRMonitorFramework */,
 				D9D56EB51CC098EC003CE68D /* TBRMonitorExample */,
 				D9D56ECF1CC098EC003CE68D /* TBRMonitorExampleTests */,
+				D9D56F011CC09AC7003CE68D /* TBRMonitorFramework */,
 				D9D56EB41CC098EC003CE68D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +123,7 @@
 			children = (
 				D9D56EB31CC098EC003CE68D /* TBRMonitorExample.app */,
 				D9D56ECC1CC098EC003CE68D /* TBRMonitorExampleTests.xctest */,
+				D9D56F001CC09AC7003CE68D /* TBRMonitorFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,7 +218,27 @@
 			path = TBRURL;
 			sourceTree = "<group>";
 		};
+		D9D56F011CC09AC7003CE68D /* TBRMonitorFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D9D56F021CC09AC7003CE68D /* TBRMonitorFramework.h */,
+				D9D56F041CC09AC7003CE68D /* Info.plist */,
+			);
+			path = TBRMonitorFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D9D56EFD1CC09AC7003CE68D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D56F081CC09AF6003CE68D /* TBRMonitor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		D9D56EB21CC098EC003CE68D /* TBRMonitorExample */ = {
@@ -234,6 +276,24 @@
 			productReference = D9D56ECC1CC098EC003CE68D /* TBRMonitorExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D9D56EFF1CC09AC7003CE68D /* TBRMonitorFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D56F051CC09AC7003CE68D /* Build configuration list for PBXNativeTarget "TBRMonitorFramework" */;
+			buildPhases = (
+				D9D56EFB1CC09AC7003CE68D /* Sources */,
+				D9D56EFC1CC09AC7003CE68D /* Frameworks */,
+				D9D56EFD1CC09AC7003CE68D /* Headers */,
+				D9D56EFE1CC09AC7003CE68D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBRMonitorFramework;
+			productName = TBRMonitorFramework;
+			productReference = D9D56F001CC09AC7003CE68D /* TBRMonitorFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,6 +309,9 @@
 					D9D56ECB1CC098EC003CE68D = {
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = D9D56EB21CC098EC003CE68D;
+					};
+					D9D56EFF1CC09AC7003CE68D = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -267,6 +330,7 @@
 			targets = (
 				D9D56EB21CC098EC003CE68D /* TBRMonitorExample */,
 				D9D56ECB1CC098EC003CE68D /* TBRMonitorExampleTests */,
+				D9D56EFF1CC09AC7003CE68D /* TBRMonitorFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -283,6 +347,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D9D56ECA1CC098EC003CE68D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D56EFE1CC09AC7003CE68D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,6 +387,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9D56ED11CC098EC003CE68D /* TBRMonitorExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D56EFB1CC09AC7003CE68D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D56F091CC09B0C003CE68D /* TBR_NSObject+Property.m in Sources */,
+				D9D56F0A1CC09B0C003CE68D /* TBR_NSString+md5.m in Sources */,
+				D9D56F0B1CC09B0C003CE68D /* TBRElectricity.m in Sources */,
+				D9D56F0C1CC09B0C003CE68D /* TBREnvConfig.m in Sources */,
+				D9D56F0D1CC09B0D003CE68D /* TBRDeviceUsage.m in Sources */,
+				D9D56F0E1CC09B0D003CE68D /* TBRMonitor.m in Sources */,
+				D9D56F0F1CC09B0D003CE68D /* TBRURLCollectionManager.m in Sources */,
+				D9D56F101CC09B0D003CE68D /* TBRURLGuard.m in Sources */,
+				D9D56F111CC09B0D003CE68D /* TBRURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +566,46 @@
 			};
 			name = Release;
 		};
+		D9D56F061CC09AC7003CE68D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TBRMonitorFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Alibaba-inc.TBRMonitorFramework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9D56F071CC09AC7003CE68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TBRMonitorFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Alibaba-inc.TBRMonitorFramework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -504,6 +631,14 @@
 			buildConfigurations = (
 				D9D56ED91CC098EC003CE68D /* Debug */,
 				D9D56EDA1CC098EC003CE68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D9D56F051CC09AC7003CE68D /* Build configuration list for PBXNativeTarget "TBRMonitorFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D56F061CC09AC7003CE68D /* Debug */,
+				D9D56F071CC09AC7003CE68D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
