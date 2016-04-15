@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9D56EB81CC098EC003CE68D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EB71CC098EC003CE68D /* main.m */; };
+		D9D56EBB1CC098EC003CE68D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EBA1CC098EC003CE68D /* AppDelegate.m */; };
+		D9D56EBE1CC098EC003CE68D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EBD1CC098EC003CE68D /* ViewController.m */; };
+		D9D56EC11CC098EC003CE68D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D56EBF1CC098EC003CE68D /* Main.storyboard */; };
+		D9D56EC31CC098EC003CE68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D56EC21CC098EC003CE68D /* Assets.xcassets */; };
+		D9D56EC61CC098EC003CE68D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D56EC41CC098EC003CE68D /* LaunchScreen.storyboard */; };
+		D9D56ED11CC098EC003CE68D /* TBRMonitorExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56ED01CC098EC003CE68D /* TBRMonitorExampleTests.m */; };
+		D9D56EF21CC0991A003CE68D /* TBR_NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EDE1CC0991A003CE68D /* TBR_NSObject+Property.m */; };
+		D9D56EF31CC0991A003CE68D /* TBR_NSString+md5.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EE01CC0991A003CE68D /* TBR_NSString+md5.m */; };
+		D9D56EF41CC0991A003CE68D /* TBRElectricity.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EE31CC0991A003CE68D /* TBRElectricity.m */; };
+		D9D56EF51CC0991A003CE68D /* TBREnvConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EE51CC0991A003CE68D /* TBREnvConfig.m */; };
+		D9D56EF61CC0991A003CE68D /* TBRDeviceUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EE81CC0991A003CE68D /* TBRDeviceUsage.m */; };
+		D9D56EF71CC0991A003CE68D /* TBRMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EEA1CC0991A003CE68D /* TBRMonitor.m */; };
+		D9D56EF81CC0991A003CE68D /* TBRURLCollectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EED1CC0991A003CE68D /* TBRURLCollectionManager.m */; };
+		D9D56EF91CC0991A003CE68D /* TBRURLGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EEF1CC0991A003CE68D /* TBRURLGuard.m */; };
+		D9D56EFA1CC0991A003CE68D /* TBRURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EF11CC0991A003CE68D /* TBRURLProtocol.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9D56ECD1CC098EC003CE68D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D56EAB1CC098EC003CE68D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9D56EB21CC098EC003CE68D;
+			remoteInfo = TBRMonitorExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9D56EB31CC098EC003CE68D /* TBRMonitorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBRMonitorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D56EB71CC098EC003CE68D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9D56EB91CC098EC003CE68D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9D56EBA1CC098EC003CE68D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9D56EBC1CC098EC003CE68D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D9D56EBD1CC098EC003CE68D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D9D56EC01CC098EC003CE68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9D56EC21CC098EC003CE68D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9D56EC51CC098EC003CE68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9D56EC71CC098EC003CE68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D56ECC1CC098EC003CE68D /* TBRMonitorExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBRMonitorExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D56ED01CC098EC003CE68D /* TBRMonitorExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBRMonitorExampleTests.m; sourceTree = "<group>"; };
+		D9D56ED21CC098EC003CE68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D56EDD1CC0991A003CE68D /* TBR_NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBR_NSObject+Property.h"; sourceTree = "<group>"; };
+		D9D56EDE1CC0991A003CE68D /* TBR_NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBR_NSObject+Property.m"; sourceTree = "<group>"; };
+		D9D56EDF1CC0991A003CE68D /* TBR_NSString+md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBR_NSString+md5.h"; sourceTree = "<group>"; };
+		D9D56EE01CC0991A003CE68D /* TBR_NSString+md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBR_NSString+md5.m"; sourceTree = "<group>"; };
+		D9D56EE21CC0991A003CE68D /* TBRElectricity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRElectricity.h; sourceTree = "<group>"; };
+		D9D56EE31CC0991A003CE68D /* TBRElectricity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRElectricity.m; sourceTree = "<group>"; };
+		D9D56EE41CC0991A003CE68D /* TBREnvConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBREnvConfig.h; sourceTree = "<group>"; };
+		D9D56EE51CC0991A003CE68D /* TBREnvConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBREnvConfig.m; sourceTree = "<group>"; };
+		D9D56EE71CC0991A003CE68D /* TBRDeviceUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRDeviceUsage.h; sourceTree = "<group>"; };
+		D9D56EE81CC0991A003CE68D /* TBRDeviceUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRDeviceUsage.m; sourceTree = "<group>"; };
+		D9D56EE91CC0991A003CE68D /* TBRMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRMonitor.h; sourceTree = "<group>"; };
+		D9D56EEA1CC0991A003CE68D /* TBRMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRMonitor.m; sourceTree = "<group>"; };
+		D9D56EEC1CC0991A003CE68D /* TBRURLCollectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRURLCollectionManager.h; sourceTree = "<group>"; };
+		D9D56EED1CC0991A003CE68D /* TBRURLCollectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRURLCollectionManager.m; sourceTree = "<group>"; };
+		D9D56EEE1CC0991A003CE68D /* TBRURLGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRURLGuard.h; sourceTree = "<group>"; };
+		D9D56EEF1CC0991A003CE68D /* TBRURLGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRURLGuard.m; sourceTree = "<group>"; };
+		D9D56EF01CC0991A003CE68D /* TBRURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRURLProtocol.h; sourceTree = "<group>"; };
+		D9D56EF11CC0991A003CE68D /* TBRURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRURLProtocol.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9D56EB01CC098EC003CE68D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D56EC91CC098EC003CE68D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9D56EAA1CC098EC003CE68D = {
+			isa = PBXGroup;
+			children = (
+				D9D56EDB1CC0991A003CE68D /* TBRMonitorFramework */,
+				D9D56EB51CC098EC003CE68D /* TBRMonitorExample */,
+				D9D56ECF1CC098EC003CE68D /* TBRMonitorExampleTests */,
+				D9D56EB41CC098EC003CE68D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9D56EB41CC098EC003CE68D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9D56EB31CC098EC003CE68D /* TBRMonitorExample.app */,
+				D9D56ECC1CC098EC003CE68D /* TBRMonitorExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9D56EB51CC098EC003CE68D /* TBRMonitorExample */ = {
+			isa = PBXGroup;
+			children = (
+				D9D56EB91CC098EC003CE68D /* AppDelegate.h */,
+				D9D56EBA1CC098EC003CE68D /* AppDelegate.m */,
+				D9D56EBC1CC098EC003CE68D /* ViewController.h */,
+				D9D56EBD1CC098EC003CE68D /* ViewController.m */,
+				D9D56EBF1CC098EC003CE68D /* Main.storyboard */,
+				D9D56EC21CC098EC003CE68D /* Assets.xcassets */,
+				D9D56EC41CC098EC003CE68D /* LaunchScreen.storyboard */,
+				D9D56EC71CC098EC003CE68D /* Info.plist */,
+				D9D56EB61CC098EC003CE68D /* Supporting Files */,
+			);
+			path = TBRMonitorExample;
+			sourceTree = "<group>";
+		};
+		D9D56EB61CC098EC003CE68D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9D56EB71CC098EC003CE68D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9D56ECF1CC098EC003CE68D /* TBRMonitorExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9D56ED01CC098EC003CE68D /* TBRMonitorExampleTests.m */,
+				D9D56ED21CC098EC003CE68D /* Info.plist */,
+			);
+			path = TBRMonitorExampleTests;
+			sourceTree = "<group>";
+		};
+		D9D56EDB1CC0991A003CE68D /* TBRMonitorFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D9D56EDC1CC0991A003CE68D /* TBRCatogory */,
+				D9D56EE11CC0991A003CE68D /* TBRElectricity */,
+				D9D56EE41CC0991A003CE68D /* TBREnvConfig.h */,
+				D9D56EE51CC0991A003CE68D /* TBREnvConfig.m */,
+				D9D56EE61CC0991A003CE68D /* TBRMemory */,
+				D9D56EE91CC0991A003CE68D /* TBRMonitor.h */,
+				D9D56EEA1CC0991A003CE68D /* TBRMonitor.m */,
+				D9D56EEB1CC0991A003CE68D /* TBRURL */,
+			);
+			path = TBRMonitorFramework;
+			sourceTree = "<group>";
+		};
+		D9D56EDC1CC0991A003CE68D /* TBRCatogory */ = {
+			isa = PBXGroup;
+			children = (
+				D9D56EDD1CC0991A003CE68D /* TBR_NSObject+Property.h */,
+				D9D56EDE1CC0991A003CE68D /* TBR_NSObject+Property.m */,
+				D9D56EDF1CC0991A003CE68D /* TBR_NSString+md5.h */,
+				D9D56EE01CC0991A003CE68D /* TBR_NSString+md5.m */,
+			);
+			path = TBRCatogory;
+			sourceTree = "<group>";
+		};
+		D9D56EE11CC0991A003CE68D /* TBRElectricity */ = {
+			isa = PBXGroup;
+			children = (
+				D9D56EE21CC0991A003CE68D /* TBRElectricity.h */,
+				D9D56EE31CC0991A003CE68D /* TBRElectricity.m */,
+			);
+			path = TBRElectricity;
+			sourceTree = "<group>";
+		};
+		D9D56EE61CC0991A003CE68D /* TBRMemory */ = {
+			isa = PBXGroup;
+			children = (
+				D9D56EE71CC0991A003CE68D /* TBRDeviceUsage.h */,
+				D9D56EE81CC0991A003CE68D /* TBRDeviceUsage.m */,
+			);
+			path = TBRMemory;
+			sourceTree = "<group>";
+		};
+		D9D56EEB1CC0991A003CE68D /* TBRURL */ = {
+			isa = PBXGroup;
+			children = (
+				D9D56EEC1CC0991A003CE68D /* TBRURLCollectionManager.h */,
+				D9D56EED1CC0991A003CE68D /* TBRURLCollectionManager.m */,
+				D9D56EEE1CC0991A003CE68D /* TBRURLGuard.h */,
+				D9D56EEF1CC0991A003CE68D /* TBRURLGuard.m */,
+				D9D56EF01CC0991A003CE68D /* TBRURLProtocol.h */,
+				D9D56EF11CC0991A003CE68D /* TBRURLProtocol.m */,
+			);
+			path = TBRURL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9D56EB21CC098EC003CE68D /* TBRMonitorExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D56ED51CC098EC003CE68D /* Build configuration list for PBXNativeTarget "TBRMonitorExample" */;
+			buildPhases = (
+				D9D56EAF1CC098EC003CE68D /* Sources */,
+				D9D56EB01CC098EC003CE68D /* Frameworks */,
+				D9D56EB11CC098EC003CE68D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBRMonitorExample;
+			productName = TBRMonitorExample;
+			productReference = D9D56EB31CC098EC003CE68D /* TBRMonitorExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9D56ECB1CC098EC003CE68D /* TBRMonitorExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D56ED81CC098EC003CE68D /* Build configuration list for PBXNativeTarget "TBRMonitorExampleTests" */;
+			buildPhases = (
+				D9D56EC81CC098EC003CE68D /* Sources */,
+				D9D56EC91CC098EC003CE68D /* Frameworks */,
+				D9D56ECA1CC098EC003CE68D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9D56ECE1CC098EC003CE68D /* PBXTargetDependency */,
+			);
+			name = TBRMonitorExampleTests;
+			productName = TBRMonitorExampleTests;
+			productReference = D9D56ECC1CC098EC003CE68D /* TBRMonitorExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9D56EAB1CC098EC003CE68D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alibaba-inc Literature";
+				TargetAttributes = {
+					D9D56EB21CC098EC003CE68D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D9D56ECB1CC098EC003CE68D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D9D56EB21CC098EC003CE68D;
+					};
+				};
+			};
+			buildConfigurationList = D9D56EAE1CC098EC003CE68D /* Build configuration list for PBXProject "TBRMonitorExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9D56EAA1CC098EC003CE68D;
+			productRefGroup = D9D56EB41CC098EC003CE68D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9D56EB21CC098EC003CE68D /* TBRMonitorExample */,
+				D9D56ECB1CC098EC003CE68D /* TBRMonitorExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9D56EB11CC098EC003CE68D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D56EC61CC098EC003CE68D /* LaunchScreen.storyboard in Resources */,
+				D9D56EC31CC098EC003CE68D /* Assets.xcassets in Resources */,
+				D9D56EC11CC098EC003CE68D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D56ECA1CC098EC003CE68D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9D56EAF1CC098EC003CE68D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D56EF61CC0991A003CE68D /* TBRDeviceUsage.m in Sources */,
+				D9D56EBE1CC098EC003CE68D /* ViewController.m in Sources */,
+				D9D56EF71CC0991A003CE68D /* TBRMonitor.m in Sources */,
+				D9D56EF21CC0991A003CE68D /* TBR_NSObject+Property.m in Sources */,
+				D9D56EF91CC0991A003CE68D /* TBRURLGuard.m in Sources */,
+				D9D56EF51CC0991A003CE68D /* TBREnvConfig.m in Sources */,
+				D9D56EBB1CC098EC003CE68D /* AppDelegate.m in Sources */,
+				D9D56EF81CC0991A003CE68D /* TBRURLCollectionManager.m in Sources */,
+				D9D56EFA1CC0991A003CE68D /* TBRURLProtocol.m in Sources */,
+				D9D56EF31CC0991A003CE68D /* TBR_NSString+md5.m in Sources */,
+				D9D56EF41CC0991A003CE68D /* TBRElectricity.m in Sources */,
+				D9D56EB81CC098EC003CE68D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D56EC81CC098EC003CE68D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D56ED11CC098EC003CE68D /* TBRMonitorExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9D56ECE1CC098EC003CE68D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9D56EB21CC098EC003CE68D /* TBRMonitorExample */;
+			targetProxy = D9D56ECD1CC098EC003CE68D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9D56EBF1CC098EC003CE68D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9D56EC01CC098EC003CE68D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9D56EC41CC098EC003CE68D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9D56EC51CC098EC003CE68D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9D56ED31CC098EC003CE68D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9D56ED41CC098EC003CE68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9D56ED61CC098EC003CE68D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TBRMonitorExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Alibaba-inc.TBRMonitorExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9D56ED71CC098EC003CE68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TBRMonitorExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Alibaba-inc.TBRMonitorExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D9D56ED91CC098EC003CE68D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TBRMonitorExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Alibaba-inc.TBRMonitorExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBRMonitorExample.app/TBRMonitorExample";
+			};
+			name = Debug;
+		};
+		D9D56EDA1CC098EC003CE68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TBRMonitorExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Alibaba-inc.TBRMonitorExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBRMonitorExample.app/TBRMonitorExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9D56EAE1CC098EC003CE68D /* Build configuration list for PBXProject "TBRMonitorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D56ED31CC098EC003CE68D /* Debug */,
+				D9D56ED41CC098EC003CE68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D56ED51CC098EC003CE68D /* Build configuration list for PBXNativeTarget "TBRMonitorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D56ED61CC098EC003CE68D /* Debug */,
+				D9D56ED71CC098EC003CE68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D9D56ED81CC098EC003CE68D /* Build configuration list for PBXNativeTarget "TBRMonitorExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D56ED91CC098EC003CE68D /* Debug */,
+				D9D56EDA1CC098EC003CE68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9D56EAB1CC098EC003CE68D /* Project object */;
+}
