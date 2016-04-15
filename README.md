@@ -12,8 +12,11 @@ iOS App 性能监控（内存、电量、网络预警）
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [TBRMonitor startMonotorWithDelegate:self];
     return YES;
-} ```
+}
+```  
+
 然后实现 TBRMonitorDelegate 监听数据
+
 ```
 -(void)applicationRecieveBadUrl:(NSDictionary *)dic {
     NSLog(@"bad url : %@",dic);
