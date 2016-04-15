@@ -42,6 +42,8 @@ iOS App 性能监控（内存、电量、网络预警）
 * 本地URL 日志文件，路径为  
   * Debug   -> /Documents/Record.txt
   * Release -> /Documents/.Record.txt
+  
+* 通过在main bundle创建 Host.plist ,root类型为 NSArray ，监听指定 `host
 
 缺失功能：
 * 到达率
