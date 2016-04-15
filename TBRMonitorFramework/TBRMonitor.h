@@ -13,7 +13,7 @@
 -(void)applicationRecieveBadUrl:(NSDictionary *)dic;
 @optional
 -(void)applicationElectricityChanged:(float)level;
--(void)applicationMemoryUsed:(float)usedSpace free:(float)freeSpace;
+-(void)applicationMemoryUsed:(float)usedSpace free:(float)freeSpace cpu:(float)cpuUsage;
 @end
 
 

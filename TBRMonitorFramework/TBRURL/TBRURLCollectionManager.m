@@ -37,6 +37,7 @@
         
         items = [NSMutableDictionary dictionary];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recieveMemeryWarmming) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recieveMemeryWarmming) name:UIApplicationDidEnterBackgroundNotification object:nil];
     }
     return self;
 }
@@ -66,6 +67,7 @@
 }
 +(void)injectRecieveDataWithRequest:(NSURLRequest *)request recieveLenght:(double)length {
     [[TBRURLCollectionManager shareInstance] injectRecieveDataWithRequest:request recieveLenght:length];
+    [TBRURLGuard appendRecieveLength:length];
 }
 #pragma mark -  private
 - (void)startRequest:(NSURLRequest *)request {

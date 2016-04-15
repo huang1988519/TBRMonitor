@@ -1,6 +1,9 @@
 //
 //  TBRURLCollectionManager.h
-//  Usage
+//  负责整理用户请求 并 写入文件
+//
+//  @description
+//  收到内存警告和app 进入后台时会刷新请求写入本地 Record.text 文件，并清空url 列表
 //
 //  Created by huanwh on 16/4/12.
 //  Copyright © 2016年 huanwh. All rights reserved.

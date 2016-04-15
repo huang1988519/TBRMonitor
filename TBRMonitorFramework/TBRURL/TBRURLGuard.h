@@ -1,6 +1,7 @@
 //
 //  TBRURLGuard.h
-//  Usage
+//
+//  负责请求数据的收集并统计
 //
 //  Created by huanwh on 16/4/13.
 //  Copyright © 2016年 huanwh. All rights reserved.
@@ -44,7 +45,7 @@ typedef void (^TBRURLChangeHandle)(NSDictionary * badUrl);
  */
 +(void)appendRecieveLength:(double)length;
 /**
- *  统计网络消耗总流量
+ *  获取 统计网络消耗总流量
  */
 +(double)networkRecieveDataLenght;
 /**

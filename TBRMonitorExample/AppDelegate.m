@@ -22,8 +22,8 @@
 -(void)applicationElectricityChanged:(float)level {
     NSLog(@"当前电量 %f",level);
 }
--(void)applicationMemoryUsed:(float)usedSpace free:(float)freeSpace {
-    NSLog(@"used: %f    free: %f",usedSpace, freeSpace);
+-(void)applicationMemoryUsed:(float)usedSpace free:(float)freeSpace cpu:(float)cpuUsage{
+    NSLog(@"used: %f    free: %f  cpu: %f",usedSpace, freeSpace,cpuUsage);
 }
 #pragma mark -
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

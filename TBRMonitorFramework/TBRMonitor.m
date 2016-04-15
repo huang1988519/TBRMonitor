@@ -40,9 +40,9 @@
             [delegate applicationElectricityChanged:level];
         }];
     }
-    if ([delegate respondsToSelector:@selector(applicationMemoryUsed:free:)]) {
-        deviceObserver = [TBRDeviceUsage observeMemoryHandle:^(float usage, float free) {
-            [delegate applicationMemoryUsed:usage free:free];
+    if ([delegate respondsToSelector:@selector(applicationMemoryUsed:free:cpu:)]) {
+        deviceObserver = [TBRDeviceUsage observeMemoryHandle:^(float usage, float free, float cpuUage) {
+            [delegate applicationMemoryUsed:usage free:free cpu:cpuUage];
         }];
     }
     

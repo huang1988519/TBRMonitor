@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^TBRMemoryHandle)(float usage,float free);
+typedef void (^TBRDeviceInfoHandle)(float usage,float free,float cpuUsage);
 
 @interface TBRDeviceUsage : NSObject {
     
 }
-+(instancetype)observeMemoryHandle:(TBRMemoryHandle)observer;
++(instancetype)observeMemoryHandle:(TBRDeviceInfoHandle)observer;
 @end
