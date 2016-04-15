@@ -56,18 +56,18 @@ iOS App 性能监控（内存、电量、网络预警）
 * 一帧每秒，快照memory使用情况，并 ```-(void)applicationMemoryUsed:(float)usedSpace free:(float)freeSpace;
 ``` used 和 free 空间，已  ```kb``` 为单位
 
-** 电量使用情况**
+**电量使用情况**
 
 * 手机电量使用状况。刷新时机为“每当电量有变化时才会通知”。代理方法为``-(void)applicationElectricityChanged:(float)level;
  ``
 
 
-** CPU使用  **
+**CPU使用**
 
 * 明天加上。。。
 
 
-** UI 绘制**
+**UI 绘制**
 * Window 绘制监控数据
 
 
