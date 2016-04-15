@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/huang1988519/TBRMonitor.git", :tag => s.version }
   #s.source_files  = 'TBRMonitor/TBRMonitor.{h,m}', 'TBRMonitorFramework/', 'TBRMonitorFramework/TBRCatogory/', 'TBRMonitorFramework/TBRElectricity', 'TBRMonitorFramework/TBRMemory', 'TBRMonitorFramework/TBRURL/'
-  s.source_files  = 'TBRMonitor/**/*', 'TBRMonitorFramework/**/*'
+  s.source_files  = 'TBRMonitorFramework/**/*'
   s.exclude_files = "Classes/Exclude"
   s.public_header_files = "TBRMonitor/TBRMonitor.h"
 end
