@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D9D56EFF1CC09AC7003CE68D"
-               BuildableName = "TBRMonitor.framework"
+               BuildableName = "TBRMonitorFramework.framework"
                BlueprintName = "TBRMonitorFramework"
                ReferencedContainer = "container:TBRMonitorExample.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D9D56EFF1CC09AC7003CE68D"
-            BuildableName = "TBRMonitor.framework"
+            BuildableName = "TBRMonitorFramework.framework"
             BlueprintName = "TBRMonitorFramework"
             ReferencedContainer = "container:TBRMonitorExample.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D9D56EFF1CC09AC7003CE68D"
-            BuildableName = "TBRMonitor.framework"
+            BuildableName = "TBRMonitorFramework.framework"
             BlueprintName = "TBRMonitorFramework"
             ReferencedContainer = "container:TBRMonitorExample.xcodeproj">
          </BuildableReference>
