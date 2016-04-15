@@ -43,7 +43,8 @@ static TBREnvConfig * instance = nil;
     @synchronized (self) {
         NSString * path = [[NSBundle mainBundle] pathForResource:@"Hosts" ofType:@"plist"];
         if (path == nil) {
-            NSLog(@"查无配置host 文件");
+            
+            NSLog(@"查无配置host 文件，监控所以host请求\n--如果需要监控指定host，请在main bundle下创建 Hosts.plist 文件，root 为 NSArray");
             return ;
         }
         NSArray * hosts = [NSArray arrayWithContentsOfFile:path];

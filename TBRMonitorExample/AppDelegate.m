@@ -7,16 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "TBRMonitor.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <TBRMonitorDelegate>
 
 @end
 
 @implementation AppDelegate
 
-
+#pragma mark - TBRMonitorDeletate
+-(void)applicationRecieveBadUrl:(NSDictionary *)dic {
+    NSLog(@"异常URL : %@", dic);
+}
+-(void)applicationElectricityChanged:(float)level {
+    NSLog(@"当前电量 %f",level);
+}
+-(void)applicationMemoryUsed:(float)usedSpace free:(float)freeSpace {
+    NSLog(@"used: %f    free: %f",usedSpace, freeSpace);
+}
+#pragma mark -
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [TBRMonitor startMonotorWithDelegate:self];
     return YES;
 }
 
