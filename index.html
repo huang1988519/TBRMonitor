@@ -87,8 +87,8 @@
 <pre><code>-(void)applicationRecieveBadUrl:(NSDictionary *)dic {
     NSLog(@"bad url : %@",dic);
 }
-- (void)applicationMemoryUsed:(float)usedSpace free:(float)freeSpace {
-    NSLog(@"used: %f    free: %f",usedSpace, freeSpace);
+- (void)applicationMemoryUsed:(float)usedSpace free:(float)freeSpace cpu:(float)cpuUsage{
+    NSLog(@"used: %f    free: %f    cpu:%f",usedSpace, freeSpace, cpuUsage);
 }
 -(void)applicationElectricityChanged:(float)level {
     NSLog(@"current electricity: %f",level);
