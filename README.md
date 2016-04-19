@@ -42,7 +42,7 @@ iOS App 性能监控（内存、电量、网络预警）
 * 本地URL 日志文件，路径为  
   * Debug   -> /Documents/Record.txt
   * Release -> /Documents/.Record.txt
-  
+
 * 通过在main bundle创建 Host.plist ,root类型为 NSArray ，监听指定 `host
 
 缺失功能：
@@ -101,5 +101,18 @@ iOS App 性能监控（内存、电量、网络预警）
 * ```carthage update```
 * embedded Carthage/Build/iOS/TBRMonitorFramework.framework 到你的target
 
+
+## 生成Api文档：
+```
+> chmod +x GenerateDocument.sh
+> /GenerateDocument.sh
+...
+input company name
+input company id
+input project name
+input "is generate xcode docs" yes/other
+generate...
+sucess!
+```
 
 > 如果使用过程中有问题，请发邮件 huang1988519@126.com

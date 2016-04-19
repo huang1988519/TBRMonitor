@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D9D36DF11CC62CD000E7AF10 /* TBRMonitorDocument */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D9D36DF41CC62CD000E7AF10 /* Build configuration list for PBXAggregateTarget "TBRMonitorDocument" */;
+			buildPhases = (
+				D9D36DF61CC62CE800E7AF10 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = TBRMonitorDocument;
+			productName = TBRMonitorDocument;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		D9D56EB81CC098EC003CE68D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EB71CC098EC003CE68D /* main.m */; };
 		D9D56EBB1CC098EC003CE68D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EBA1CC098EC003CE68D /* AppDelegate.m */; };
@@ -305,6 +319,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Alibaba-inc Literature";
 				TargetAttributes = {
+					D9D36DF11CC62CD000E7AF10 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					D9D56EB21CC098EC003CE68D = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -333,6 +350,7 @@
 				D9D56EB21CC098EC003CE68D /* TBRMonitorExample */,
 				D9D56ECB1CC098EC003CE68D /* TBRMonitorExampleTests */,
 				D9D56EFF1CC09AC7003CE68D /* TBRMonitorFramework */,
+				D9D36DF11CC62CD000E7AF10 /* TBRMonitorDocument */,
 			);
 		};
 /* End PBXProject section */
@@ -363,6 +381,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D9D36DF61CC62CE800E7AF10 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"Alibaba\";\ncompanyID=\"com.alibaba-inc\";\ncompanyURL=\"http://\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"./Help\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D9D56EAF1CC098EC003CE68D /* Sources */ = {
@@ -438,6 +472,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D9D36DF21CC62CD000E7AF10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9D36DF31CC62CD000E7AF10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D9D56ED31CC098EC003CE68D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -613,6 +661,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D9D36DF41CC62CD000E7AF10 /* Build configuration list for PBXAggregateTarget "TBRMonitorDocument" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9D36DF21CC62CD000E7AF10 /* Debug */,
+				D9D36DF31CC62CD000E7AF10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D9D56EAE1CC098EC003CE68D /* Build configuration list for PBXProject "TBRMonitorExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
