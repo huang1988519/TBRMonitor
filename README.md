@@ -21,8 +21,8 @@ iOS App 性能监控（内存、电量、网络预警）
 -(void)applicationRecieveBadUrl:(NSDictionary *)dic {
     NSLog(@"bad url : %@",dic);
 }
-- (void)applicationMemoryUsed:(float)usedSpace free:(float)freeSpace {
-    NSLog(@"used: %f    free: %f",usedSpace, freeSpace);
+- (void)applicationMemoryUsed:(float)usedSpace free:(float)freeSpace cpu:cpuUsage {
+    NSLog(@"used: %f    free: %f    cpu:%f",usedSpace, freeSpace,cpuUsage);
 }
 -(void)applicationElectricityChanged:(float)level {
     NSLog(@"current electricity: %f",level);
